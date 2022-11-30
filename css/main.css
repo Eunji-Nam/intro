@@ -1,0 +1,25 @@
+.profile {
+    width: 100px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.title {
+    font-size: 16px; 
+    letter-spacing: 1px; 
+    text-align: center;
+}
+
+.content {
+    color: blue;
+}
+
+p {
+    text-align: center;
+    color: green;
+}
+
+#special {
+    color: blueviolet;
+}
