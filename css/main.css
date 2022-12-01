@@ -31,6 +31,9 @@
 
 .container {
     width: 800px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .header {
@@ -61,4 +64,24 @@
     height: 100px;
     background: grey;
     /* clear: both; */
+}
+
+.blog-content {
+    width: 80%;
+    height: 200px;
+    float: left;
+}
+
+.blog-img {
+    width: 20%;
+    height: 200px;
+    float: left;
+    vertical-align: top;
+    text-align: center;
+    line-height: 200px;
+}
+
+.blog-name {
+    margin-left: 10px;
+    float: left;
 }
