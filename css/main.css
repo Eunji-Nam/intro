@@ -154,3 +154,103 @@
     z-index: 5;
     /* box-sizing: border-box; */
 }
+
+.form-background {
+    background-color: black;
+    padding: 30px;
+}
+
+.contact {
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: white;
+    margin: auto;
+}
+
+/* .form-status {
+    width: 80%;
+    height: 90%;
+    margin: auto;
+} */
+
+.form-title {
+    font-size: 30px;
+}
+
+form p {
+    margin: 1px;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+/* input[type=text] {
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+} */
+
+.form-input {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+input::placeholder {
+    text-indent: 10px;
+}
+
+.w-100 {
+    width: 100%;
+    padding: 10px;
+}
+
+.w-50 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+/* textarea {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+
+.mail-input {
+    width: 100%;
+}
+
+.first-name { 
+    float: left;
+    margin-right: 30px;
+}
+
+.last-name {
+    float: left;
+}
+
+.name-input {
+    width: 100%;
+} */
+
+.form-check {
+    float: left;
+}
+
+.form-button {
+    background-color: darkorange;
+    color: white;
+    border: 0px;
+    padding: 7px 30px;
+    border-radius: 3px;
+    float: right;
+}
