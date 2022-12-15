@@ -1,3 +1,18 @@
+@font-face {
+    font-family: '이쁜폰트';
+    src: url(../font/NanumSquareR.woff)
+}
+
+body {
+    margin: 0;
+    font-family: '이쁜폰트';
+}
+
+/* 폰트가 이쁘지 않을 때(부드럽지 않을 때) 적용 -> 폰트를 아주 살짝 0.03도만큼 돌리기 */
+p, h4, h3, h2, span, button {
+    transform-origin: rotate(0.03deg);
+}
+
 .profile {
     width: 100px; 
     display: block; 
@@ -165,6 +180,7 @@
     max-width: 600px;
     padding: 30px;
     margin: auto;
+    background-color: white;
 }
 
 /* .form-status {
@@ -366,4 +382,23 @@ table td:nth-child(2) {
     margin: auto;
     margin-top: 20px; 
     max-width: 700px;
+}
+
+.flex-container {
+    display: flex;
+    background-color: salmon;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.flex-item {
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
 }
