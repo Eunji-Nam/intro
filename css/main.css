@@ -402,3 +402,47 @@ table td:nth-child(2) {
     font-size: 30px;
     font-weight: bold;
 }
+
+@media screen and (max-width: 1200px) {
+    .main-title {
+        font-size: 30px;
+    }
+
+    .flex-item {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 20px;
+    }
+
+    .flex-item {
+        font-size: 10px;
+    }
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.product-item {
+    text-align: center;
+    width: 25%;
+}
+
+@media screen and (max-width: 1200px) {
+    .product-item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-item {
+        width: 100%;
+    }
+}
