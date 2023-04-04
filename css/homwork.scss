@@ -1,0 +1,192 @@
+@use 'reset';
+
+.list-box {
+    width: 500px;
+    li {
+        list-style: none;
+        border-top: 1px solid #eee;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        padding: 15px;
+    }
+    .active {
+        color: white;
+        background-color: dodgerblue;
+    }
+}
+
+
+span {
+    font-weight: bold;
+}
+
+.alert-box-green {
+    width: 700px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 50px;
+    background-color: #D4EFDA;
+    color: #057642;
+}
+
+.alert-box-blue {
+    @extend .alert-box-green;
+    background-color: #C5E4F2;
+    color: #1A567E;
+}
+
+.alert-box-yellow {
+    @extend .alert-box-green;
+    background-color: #FEF2C8;
+    color: #86681D;
+}
+
+
+.row {
+    display: flex;
+    width: 600px;
+    background-color: #eae2f3;
+    margin: 10px;
+}
+
+@mixin col-style($size) {
+    border: 1px solid #d7cae7;
+    padding: 10px;
+    width: $size;
+}
+
+.col-6 {
+    @include col-style(50%);
+}
+
+.col-4 {
+    @include col-style(33.33%);
+}
+
+
+
+.ani-text {
+    // transform: rotate(30deg);  회전
+    // transform: translateX(100px);   X축 좌표이동
+    // transform: scale(10);
+    text-align: center;
+}
+.ani-text:hover {
+    animation-name: 왔다갔다;
+    animation-duration: 2s;
+}
+
+@keyframes 왔다갔다 {
+    0% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(-100px);
+    }
+    60% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.shake-btn {
+    width: 150px;
+    background-color: skyblue;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    padding: 2px;
+    margin: auto;
+}
+
+.shake-btn:hover {
+    animation-name: 흔들흔들;
+    animation-duration: 1s;
+}
+
+@keyframes 흔들흔들 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.rotation-text {
+    width: 100px;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.rotation-text:hover {
+    animation-name: 회전;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes 회전 {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(45deg) scale(2)
+    }
+}
+
+.side-bar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    z-index: 5;
+    padding: 25px;
+    text-align: right;
+    transition: all 1s;
+    transform: translateX(-100px);
+}
+
+.side-bar p {
+    transform: translateX(-250px);
+}
+
+.side-bar:hover {
+    transform: translateX(0px);
+    text-align: center;
+}
+
+@keyframes 슬라이드 {
+    0% {
+        transform: translateX(-250px);
+    }
+    50% {
+        transform: translateX(50px) skew(-30deg);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.side-bar:hover p {
+    animation-name: 슬라이드;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
