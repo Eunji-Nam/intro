@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.side-bar {
+    position: fixed;
+    width: 170px;
+    height: 100%;
+    z-index: 5;
+    background-color: #4338CA;
+    color: white;
+    padding: 10px;
+    transform: translateX(-110px);
+    transition: all 1s;
+}
+
+.side-bar div {
+    margin: 12px 0px 0px 12px;
+}
+
+.side-bar:hover {
+    transition: all 1s;
+    transform: translateX(0px);
+}
+
+.side-bar i {
+    margin-right: 5px;
+    transform: translateX(110px);
+    transition: all 1s;
+}
+.side-bar:hover i {
+    transform: translateX(0px);
+}
+
+.contents {
+    padding-left: 80px;
+}
+
+.form-control {
+    width: 100px;
+    transition: width 1s;
+}
+
+.form-control:focus {
+    width: 300px;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.badge_position {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+}
+
+.chart-box {
+    width: 1200px;
+    margin-right: 50px;
+}
+
+.chart {
+    width: 100%;
+}
+
+.card-shape {
+    width: 20%;
+    height: 100px;
+    margin-right: 50px;
+}
+
+.point-sky {
+    height: 100%;
+    background-color: skyblue;
+}
+
+.point-green {
+    background-color: green;
+}
+
+.point-blue {
+    height: 100%;
+    background-color: blue;
+}
+
+.point-yellow {
+    background-color: yellow;
+}
+
+.card-contents {
+    width: 70%;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.card-image {
+    width: 30%;
+    text-align: right;
+    margin-right: 20px;
+    color: gray;
+}
+
+.shadow {
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.tasks {
+    width: 400px;
+}

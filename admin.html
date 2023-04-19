@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link href="css/admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="side-bar">
+        <div class="side-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div>
+            <i class="fas fa-headphones"></i>
+            <span>Services</span>
+        </div>
+        <div>
+            <i class="fas fa-flag"></i>
+            <span>Alerts</span>
+        </div>
+        <div>
+            <i class="fas fa-chart-pie"></i>
+            <span>stats</span>
+        </div>
+    </div>
+
+    <div>
+        <div class="contents">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            
+                  <div class="collapse navbar-collapse" id="navbar">
+                    <form class="d-flex">
+                        <input class="form-control" type="search" placeholder="Search">
+                        <button class="btn btn-dark" type="submit"><i class="fas fa-search text-white"></i></button>
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item" style="display: flex;">
+                        <a class="nav-link" href="#">
+                            <span class="badge bg-danger badge_position">5</span>
+                            <i class="fas fa-bell"></i>
+                        </a>
+                        <a class="nav-link" href="#">
+                            <span class="badge bg-danger badge_position">9</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        
+                        <p class="nav-link">Minny Park</p>
+                      </li>
+                    </ul>
+                  </div>
+            
+                </div>
+            </nav>
+        </div>
+        
+        <div style="background-color: gainsboro;" class="contents">
+            <div style="padding-top: 15px;">
+                <h2><b>Dashboard</b></h2>
+                <div style="display: flex;">
+    
+                    <div class="card mb-3 card-shape">
+                        <div class="row g-0 shadow">
+                          <div class="col-md-1 point-sky">
+                          </div>
+                          <div class="col-md-11" style="display: flex; align-items: center;">
+                            <div class="card-contents">
+                                <p>Earnings (Monthly)</p>
+                                <p><b>$400,000</b></p>
+                            </div>
+                            <div class="card-image">
+                                <i class="fas fa-calendar fa-2x"></i>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-3 card-shape">
+                        <div class="row g-0 shadow">
+                          <div class="col-md-1 point-green">
+                          </div>
+                          <div class="col-md-11" style="display: flex; align-items: center;">
+                            <div class="card-contents">
+                                <p>Earnings (Annual)</p>
+                                <p><b>$800,000</b></p>
+                            </div>
+                            <div class="card-image">
+                                <i class="fas fa-dollar-sign fa-2x"></i>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-3 card-shape">
+                        <div class="row g-0 shadow">
+                          <div class="col-md-1 point-blue">
+                          </div>
+                          <div class="col-md-11" style="display: flex; align-items: center;">
+                            <div class="card-contents">
+                                <p>Tasks</p>
+                                <p><b>13</b></p>
+                            </div>
+                            <div class="card-image">
+                                <i class="fas fa-list fa-2x"></i>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-3 card-shape">
+                        <div class="row g-0 shadow">
+                          <div class="col-md-1 point-yellow">
+                          </div>
+                          <div class="col-md-11" style="display: flex; align-items: center;">
+                            <div class="card-contents">
+                                <p>Requests</p>
+                                <p><b>26</b></p>
+                            </div>
+                            <div class="card-image">
+                                <i class="fas fa-comments fa-2x"></i>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        
+            <div style="display: flex;">
+                <div class="chart-box shadow">
+                    <ul class="list-group tasks shadow" style="width: 100%;">
+                        <li class="list-group-item">
+                            <h4><b>Earning Overview</b></h4>
+                        </li>
+                        <li class="list-group-item">
+                            <canvas id="myChart" class="chart"></canvas>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="tasks">
+                    <ul class="list-group shadow">
+                        <li class="list-group-item">
+                            <h4><b>Tasks</b></h4>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <span>Borrowed Items</span>
+                            <span class="badge bg-primary rounded-pill">14</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <span>Trello request</span>
+                            <span class="badge bg-primary rounded-pill">2</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <span>Marked Comments</span>
+                            <span class="badge bg-primary rounded-pill">1</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'Aprill', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'Monthly',
+                data: [0, 10, 5, 3, 20, 30, 45],
+                backgroundColor: '#4338CA',
+                borderColor: '#4338CA',
+                borderWidth: 1,
+                fill: true,
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
